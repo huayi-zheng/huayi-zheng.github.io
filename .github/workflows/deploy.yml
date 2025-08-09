@@ -37,6 +37,20 @@ jobs:
         run: |
           bundle exec jekyll build --trace
 
+      - name: Link check (soft)
+        uses: lycheeverse/lychee-action@v2.1.0
+        with:
+          fail: false
+          args: >-
+            --user-agent 'curl/7.54'
+            --exclude 'https://scholar.google.com'
+            --exclude 'https://www.researchgate.net'
+            --exclude 'https://doi.org'
+            --exclude-mail
+            --retry-count 2
+            --max-concurrency 6
+            --verbose --no-progress '_site/**/*.html'
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

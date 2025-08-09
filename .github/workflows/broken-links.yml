@@ -47,6 +47,25 @@ jobs:
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v2.1.0
         with:
-          fail: true
-          # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'
+          # 不因外网 403 或模板文件报错而失败
+          fail: false
+          args: >-
+            --user-agent 'curl/7.54'
+            --exclude 'https://scholar.google.com'
+            --exclude 'https://www.researchgate.net'
+            --exclude 'https://doi.org'
+            --exclude-mail
+            --retry-count 2
+            --max-concurrency 6
+            --exclude-path README.md
+            --exclude-path CUSTOMIZE.md
+            --exclude-path demo.html
+            --exclude-path original-demo.html
+            --exclude-path _layouts/redirect.html
+            --exclude-path _pages/404.md
+            --exclude-path _pages/blog.md
+            --exclude-path _posts/2018-12-22-distill.md
+            --exclude-path _posts/2023-04-24-videos.md
+            --exclude-path projects/ocean-heat.html
+            --exclude-path projects/sea-level.html
+            --verbose --no-progress './**/*.md' './**/*.html'

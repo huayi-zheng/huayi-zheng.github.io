@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Huayi Zheng</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Huayi Zheng</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="research.html">Research</a>
+                    <a class="nav-link active" href="publications.html">Publications</a>
+                    <a class="nav-link" href="assets/pdf/Huayi_Zheng_CV.pdf" target="_blank">CV</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container main-content">
+        <div class="post">
+
+
+            <!-- Publications -->
+            <div class="publications">
+                <!-- 2024 Publications -->
+                <h3 class="year-header">2024</h3>
+                <div class="bibliography">
+                    <ol>
+                        <li class="publication-item" data-year="2024">
+                            <div class="title">An Observation-Based Estimate of Atlantic Meridional Freshwater Transport</div>
+                            <div class="periodical">Geophysical Research Letters, Vol. 51, No. 24, e2024GL110021, 2024</div>
+                            <div class="author"><em>Huayi Zheng</em>, Lijing Cheng, Feili Li, Yuying Pan, and Chenyu Zhu</div>
+
+                            <div class="links">
+                                <a href="https://doi.org/10.1029/2024GL110021" class="btn btn-sm btn-outline-primary" target="_blank">DOI</a>
+                                <a href="assets/pdf/Zheng et al. - 2024 - An Observation‐Based Estimate of Atlantic Meridion.pdf" class="btn btn-sm btn-outline-secondary" target="_blank">PDF</a>
+                                <span class="citations">Cited by Google Scholar</span>
+                            </div>
+                        </li>
+
+                        <li class="publication-item" data-year="2024">
+                            <div class="title">IAPv4 ocean temperature and ocean heat content gridded dataset</div>
+                            <div class="periodical">Earth System Science Data, 2024</div>
+                            <div class="author">Lijing Cheng, Yuying Pan, Zhetao Tan, <em>Huayi Zheng</em>, Yujing Zhu, Wangxu Wei, Juan Du, Huifeng Yuan, Guancheng Li, Hanlin Ye, and others</div>
+
+                            <div class="links">
+                                <a href="https://doi.org/10.5194/essd-16-3517-2024" class="btn btn-sm btn-outline-primary" target="_blank">DOI</a>
+                                <a href="assets/pdf/Cheng et al_2024_IAPv4 ocean temperature and ocean heat content gridded dataset.pdf" class="btn btn-sm btn-outline-secondary" target="_blank">PDF</a>
+                                <span class="citations">Cited by Google Scholar</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- 2022 Publications -->
+                <h3 class="year-header">2022</h3>
+                <div class="bibliography">
+                    <ol start="3">
+                        <li class="publication-item" data-year="2022">
+                            <div class="title">Impacts of stratospheric polar vortex changes on wintertime precipitation over the northern hemisphere</div>
+                            <div class="periodical">Climate Dynamics, 2022</div>
+                            <div class="author">Jiankai Zhang, <em>Huayi Zheng</em>, Mian Xu, Qingqing Yin, Siyi Zhao, Wenshou Tian, and Zesu Yang</div>
+
+                            <div class="links">
+                                <a href="https://doi.org/10.1007/s00382-021-06088-x" class="btn btn-sm btn-outline-primary" target="_blank">DOI</a>
+                                <a href="assets/pdf/Zhang - 2022 - Impacts of stratospheric polar vortex changes on w.pdf" class="btn btn-sm btn-outline-secondary" target="_blank">PDF</a>
+                                <span class="citations">Cited by Google Scholar</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Toggle abstract visibility
+        function toggleAbstract(id) {
+            $('#' + id).collapse('toggle');
+            const button = $('button[onclick="toggleAbstract(\'' + id + '\')"]');
+            const icon = button.find('i');
+            
+            $('#' + id).on('shown.bs.collapse', function() {
+                icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            });
+            
+            $('#' + id).on('hidden.bs.collapse', function() {
+                icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            });
+        }
+
+        // Search functionality
+        $('#searchInput').on('keyup', function() {
+            const searchTerm = $(this).val().toLowerCase();
+            filterPublications();
+        });
+
+        $('#yearFilter').on('change', function() {
+            filterPublications();
+        });
+
+        function filterPublications() {
+            const searchTerm = $('#searchInput').val().toLowerCase();
+            const selectedYear = $('#yearFilter').val();
+            
+            $('.publication-item').each(function() {
+                const title = $(this).find('.title').text().toLowerCase();
+                const author = $(this).find('.author').text().toLowerCase();
+                const year = $(this).data('year').toString();
+                
+                const matchesSearch = title.includes(searchTerm) || author.includes(searchTerm);
+                const matchesYear = selectedYear === '' || year === selectedYear;
+                
+                if (matchesSearch && matchesYear) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+            
+            // Hide/show year headers based on visible publications
+            $('.year-header').each(function() {
+                const yearHeader = $(this);
+                const nextBibliography = yearHeader.next('.bibliography');
+                const visibleItems = nextBibliography.find('.publication-item:visible');
+                
+                if (visibleItems.length > 0) {
+                    yearHeader.show();
+                    nextBibliography.show();
+                } else {
+                    yearHeader.hide();
+                    nextBibliography.hide();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

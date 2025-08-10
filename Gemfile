@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
+
+# GitHub Pages 部署所需的 gem
+gem 'github-pages', group: :jekyll_plugins
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
-    gem 'jekyll'
     gem 'jekyll-archives'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'

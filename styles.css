@@ -41,7 +41,7 @@ body {
 .navbar-nav .nav-link {
     color: var(--global-text-color) !important;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     transition: all 0.3s ease;
 }
 

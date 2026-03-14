@@ -101,11 +101,11 @@ body {
 .profile.float-right {
     float: right;
     margin-left: 2rem;
-    width: 240px;
+    width: 320px;
 }
 
 .profile img {
-    max-width: 160px;
+    max-width: 280px;
     height: auto;
 }
 

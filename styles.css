@@ -239,6 +239,17 @@ p.education-degree {
     margin-bottom: 0;
 }
 
+/* News list */
+.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-list li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
 /* News section */
 .news table {
     width: 100%;

@@ -64,7 +64,7 @@ body {
 
 /* Content area with profile */
 .clearfix {
-    margin-right: 260px; /* Give space for the profile */
+    margin-right: 180px; /* Give space for the profile */
 }
 
 /* Post styles */
@@ -101,11 +101,11 @@ body {
 .profile.float-right {
     float: right;
     margin-left: 2rem;
-    width: 320px;
+    width: 360px;
 }
 
 .profile img {
-    max-width: 280px;
+    max-width: 340px;
     height: auto;
 }
 
@@ -202,7 +202,7 @@ h3 {
 }
 
 .education-year {
-    font-weight: 600;
+    font-weight: 400;
     color: var(--global-theme-color);
     font-size: 1rem;
     display: block;
@@ -214,6 +214,10 @@ h3 {
     color: var(--global-text-color);
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
+}
+
+p.education-degree {
+    font-weight: 400;
 }
 
 .education-institution {

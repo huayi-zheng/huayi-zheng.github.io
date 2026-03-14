@@ -4,89 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Huayi Zheng</title>
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #000;
-            background: #fff;
-            padding: 80px 20px 40px;
+            padding-top: 80px;
         }
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar-content {
-            display: flex;
-            gap: 40px;
-        }
-        .navbar a {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-        .navbar a:hover {
-            color: #000;
-        }
-        .navbar a.active {
-            color: #000;
-            border-bottom: 2px solid #000;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 10px;
-            color: #000;
-        }
-        .subtitle {
-            color: #666;
-            margin-bottom: 50px;
-            font-size: 1.1rem;
-        }
-        .year-group {
-            margin-bottom: 40px;
-        }
-        .year-label {
+        .pub-year-label {
             font-size: 1.3rem;
             font-weight: 500;
             color: #000;
             border-bottom: 2px solid #000;
             padding-bottom: 8px;
             margin-bottom: 25px;
+            margin-top: 30px;
         }
-        .publication {
+        .pub-year-label:first-child {
+            margin-top: 0;
+        }
+        .pub-entry {
             margin-bottom: 25px;
             line-height: 1.7;
             color: #000;
         }
-        .authors {
+        .pub-authors {
+            font-weight: 400;
+        }
+        .pub-self-name {
             font-weight: 700;
         }
-        .self-name {
+        .pub-title {
             font-weight: 700;
         }
-        .title {
-            font-weight: 700;
-        }
-        .journal {
+        .pub-journal {
             font-style: italic;
         }
         .pub-link {
@@ -101,53 +53,69 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-content">
-            <a href="index.html">HOME</a>
-            <a href="research.html">RESEARCH</a>
-            <a href="publications.html" class="active">PUBLICATIONS</a>
-            <a href="assets/pdf/Huayi_Zheng_CV.pdf" target="_blank">CV</a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="research.html">RESEARCH</a>
+                    <a class="nav-link active" href="publications.html">PUBLICATIONS</a>
+                    <a class="nav-link" href="assets/pdf/Huayi_Zheng_CV.pdf" target="_blank">CV</a>
+                </div>
+
+            </div>
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Publications</h1>
-        <p class="subtitle">Peer-reviewed research articles</p>
+    <!-- Main content -->
+    <div class="container main-content">
+        <div class="post">
+            <header class="post-header">
+                <h1 class="post-title">Publications</h1>
+                <p class="post-description">Peer-reviewed research articles</p>
+            </header>
 
-        <!-- 2024 -->
-        <div class="year-group">
-            <h2 class="year-label">2024</h2>
-            
-            <p class="publication">
-                <span class="authors"><span class="self-name">Zheng, H.</span>, Cheng, L., Li, F., Pan, Y., and Zhu, C. (2024)</span>
-                <span class="title"> An Observation-Based Estimate of Atlantic Meridional Freshwater Transport.</span>
-                <em>Geophysical Research Letters</em>, 51(24), e2024GL110021.
-                <a href="https://doi.org/10.1029/2024GL110021" class="pub-link" target="_blank">link</a>
-                <a href="assets/pdf/Zheng et al. - 2024 - An Observation‐Based Estimate of Atlantic Meridion.pdf" class="pub-link" target="_blank">pdf</a>
-            </p>
+            <article>
+                <!-- 2024 -->
+                <h2 class="pub-year-label">2024</h2>
+                
+                <p class="pub-entry">
+                    <span class="pub-authors">Zheng, H.</span>, Cheng, L., Li, F., Pan, Y., and Zhu, C. (2024)
+                    <span class="pub-title"> An Observation-Based Estimate of Atlantic Meridional Freshwater Transport.</span>
+                    <em>Geophysical Research Letters</em>, 51(24), e2024GL110021.
+                    <a href="https://doi.org/10.1029/2024GL110021" class="pub-link" target="_blank">link</a>
+                    <a href="assets/pdf/Zheng et al. - 2024 - An Observation‐Based Estimate of Atlantic Meridion.pdf" class="pub-link" target="_blank">pdf</a>
+                </p>
 
-            <p class="publication">
-                <span class="authors">Cheng, L., Pan, Y., Tan, Z., <span class="self-name">Zheng, H.</span>, Zhu, Y., Wei, W., Du, J., Yuan, H., Li, G., Ye, H., and others (2024)</span>
-                <span class="title"> IAPv4 ocean temperature and ocean heat content gridded dataset.</span>
-                <em>Earth System Science Data</em>, 2024.
-                <a href="https://doi.org/10.5194/essd-16-3517-2024" class="pub-link" target="_blank">link</a>
-                <a href="assets/pdf/Cheng et al_2024_IAPv4 ocean temperature and ocean heat content gridded dataset.pdf" class="pub-link" target="_blank">pdf</a>
-            </p>
+                <p class="pub-entry">
+                    <span class="pub-authors">Cheng, L., Pan, Y., Tan, Z., Zheng, H.</span>, Zhu, Y., Wei, W., Du, J., Yuan, H., Li, G., Ye, H., and others (2024)
+                    <span class="pub-title"> IAPv4 ocean temperature and ocean heat content gridded dataset.</span>
+                    <em>Earth System Science Data</em>, 2024.
+                    <a href="https://doi.org/10.5194/essd-16-3517-2024" class="pub-link" target="_blank">link</a>
+                    <a href="assets/pdf/Cheng et al_2024_IAPv4 ocean temperature and ocean heat content gridded dataset.pdf" class="pub-link" target="_blank">pdf</a>
+                </p>
+
+                <!-- 2022 -->
+                <h2 class="pub-year-label">2022</h2>
+                
+                <p class="pub-entry">
+                    <span class="pub-authors">Zhang, J., Zheng, H.</span>, Xu, M., Yin, Q., Zhao, S., Tian, W., and Yang, Z. (2022)
+                    <span class="pub-title"> Impacts of stratospheric polar vortex changes on wintertime precipitation over the northern hemisphere.</span>
+                    <em>Climate Dynamics</em>, 2022.
+                    <a href="https://doi.org/10.1007/s00382-021-06088-x" class="pub-link" target="_blank">link</a>
+                    <a href="assets/pdf/Zhang - 2022 - Impacts of stratospheric polar vortex changes on w.pdf" class="pub-link" target="_blank">pdf</a>
+                </p>
+
+            </article>
         </div>
-
-        <!-- 2022 -->
-        <div class="year-group">
-            <h2 class="year-label">2022</h2>
-            
-            <p class="publication">
-                <span class="authors">Zhang, J., <span class="self-name">Zheng, H.</span>, Xu, M., Yin, Q., Zhao, S., Tian, W., and Yang, Z. (2022)</span>
-                <span class="title"> Impacts of stratospheric polar vortex changes on wintertime precipitation over the northern hemisphere.</span>
-                <em>Climate Dynamics</em>, 2022.
-                <a href="https://doi.org/10.1007/s00382-021-06088-x" class="pub-link" target="_blank">link</a>
-                <a href="assets/pdf/Zhang - 2022 - Impacts of stratospheric polar vortex changes on w.pdf" class="pub-link" target="_blank">pdf</a>
-            </p>
-        </div>
-
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

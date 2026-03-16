@@ -243,11 +243,12 @@ p.education-degree {
 .news-list {
     list-style: none;
     padding-left: 0;
+    font-size: 1rem;
 }
 
 .news-list li {
     margin-bottom: 0.8rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* News section */

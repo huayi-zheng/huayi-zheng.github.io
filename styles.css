@@ -491,11 +491,12 @@ p.education-degree {
     text-align: center;
     color: var(--global-text-color);
     line-height: 1.4;
-    text-decoration: underline;
+    border-bottom: 1px solid var(--global-text-color);
 }
 
 .ri-card:hover .ri-label {
     color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
 }
 
 @media (max-width: 600px) {

@@ -246,6 +246,7 @@ p.education-degree {
     list-style: none;
     padding-left: 0;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 .news-list li, .lead li {

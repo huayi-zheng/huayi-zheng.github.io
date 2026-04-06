@@ -460,7 +460,9 @@ p.education-degree {
     flex-wrap: wrap;
 }
 
-.ri-card {
+.ri-card,
+article a.ri-card,
+a.ri-card {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1349,3 +1349,32 @@ ninja-keys::part(ninja-input-wrapper) {
 a {
   color: var(--global-hover-color); 
 }
+
+
+/* Education section */
+.education-item {
+  margin-bottom: 1.5rem;
+}
+.education-year {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+.education-degree {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+.education-institution {
+  color: #555;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+.education-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+.education-description u {
+  text-decoration: none;
+  font-weight: 500;
+}

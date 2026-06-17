@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-# GitHub Pages 部署所需的 gem
-gem 'github-pages', group: :jekyll_plugins
+# GitHub Pages 部署所需�?gem
+# gem 'github-pages', group: :jekyll_plugins  # commented: conflicts with jekyll-scholar
 
 group :jekyll_plugins do
     gem 'classifier-reborn'

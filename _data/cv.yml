@@ -8,26 +8,22 @@
 #    - name: Languages
 #      value: English, German
 
-#- title: Education
-#  type: time_table
-#  contents:
-#    - title: PhD
-#      institution: University of Zurich, Zurich, Switzerland
-#      year: 1905
-#     description:
-#        - Description 1.
-#        - Description 2.
-#        - title: Description 3.
-#          contents:
-#            - Sub-description 1.
-#            - Sub-description 2.
-#    - title: Federal teaching diploma
-#      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-#      year: 1900
-#      description:
-#        - Description 1.
-#        - Description 2.
-
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Ocean and Earth Sciences
+      institution: British Antarctic Survey / University of Southampton
+      year: 2026 - Present
+      description:
+        - Advisor: Andrew Meijiers and Alessandro Silvano
+    - title: M.S. in Atmospheric Sciences
+      institution: Institute of Atmospheric Physics, Chinese Academy of Sciences (University of Chinese Academy of Sciences)
+      year: 2023 - 2026
+      description:
+        - Advisor: Lijing Cheng
+    - title: B.S. in Atmospheric Sciences
+      institution: Lanzhou University
+      year: 2019 - 2023
 #- title: Experience
 #  type: time_table
 #  contents:

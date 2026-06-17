@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Huayi Zheng",
+    "label": "Ph.D. Student",
     "image": "",
-    "email": "albert@einstein.de",
+    "email": "zhenghuayi23@mails.ucas.ac.cn",
     "phone": "(912) 123-4567",
     "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "summary": "Ocean and Climate Change Researcher",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -30,7 +30,9 @@
       "startDate": "1933-01-01",
       "endDate": "1955-01-01",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "highlights": [
+        "Relativity"
+      ]
     }
   ],
   "volunteer": [
@@ -42,20 +44,36 @@
       "startDate": "2014-04-01",
       "endDate": "2015-07-01",
       "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "highlights": [
+        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
+        "Men of the year 2014 by Time magazine"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "British Antarctic Survey / University of Southampton",
+      "area": "Ocean and Earth Sciences",
+      "studyType": "Ph.D.",
+      "startDate": "2026-09-01",
+      "endDate": "",
+      "courses": []
+    },
+    {
+      "institution": "Institute of Atmospheric Physics, Chinese Academy of Sciences (University of Chinese Academy of Sciences)",
+      "area": "Atmospheric Sciences",
+      "studyType": "M.S.",
+      "startDate": "2023-09-01",
+      "endDate": "2026-06-01",
+      "courses": []
+    },
+    {
+      "institution": "Lanzhou University",
+      "area": "Atmospheric Sciences",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2023-06-01",
+      "courses": []
     }
   ],
   "awards": [
@@ -191,7 +209,10 @@
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "highlights": [
+        "Quantum Teleportation",
+        "Quantum Cryptography"
+      ],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"

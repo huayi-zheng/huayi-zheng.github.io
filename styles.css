@@ -538,12 +538,13 @@ a.ri-card {
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 0.8rem;
-    padding-left: 0.5em;
-    text-indent: -0.5em;
+    padding-left: 1.2em;
+    text-indent: 0;
 }
 .selected-pub .pub-entry::before {
     content: "•";
-    margin-right: 0.4em;
+    position: absolute;
+    margin-left: -1.2em;
 }
 
 /* Advisor link styles */

@@ -206,7 +206,7 @@ h3 {
 .education-year {
     font-weight: 400;
     color: var(--global-theme-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -215,7 +215,7 @@ h3 {
     font-weight: 600;
     color: var(--global-text-color);
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 p.education-degree {
@@ -226,6 +226,7 @@ p.education-degree {
     color: var(--global-text-color);
     font-weight: 500;
     margin-bottom: 0.25rem;
+    font-size: 1.05rem;
 }
 
 .education-location {
@@ -236,9 +237,15 @@ p.education-degree {
 
 .education-description {
     color: var(--global-text-color-light);
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0;
+}
+
+/* News date highlight */
+.news-date {
+    color: #007bff;
+    font-weight: 600;
 }
 
 /* News list */

@@ -244,11 +244,11 @@ p.education-degree {
 
 /* News date highlight */
 .news-date {
-    color: #007bff;
+    color: #6fa8ec;
 }
 
 /* News list */
-.news-list, .lead {
+.news-list {
     list-style: disc;
     padding-left: 1.2em;
     margin-left: 0;
@@ -256,7 +256,14 @@ p.education-degree {
     font-weight: 400;
 }
 
-.news-list li, .lead li {
+.lead {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.news-list li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
 }
